@@ -19,6 +19,32 @@
         android:layout_centerVertical="true"
         android:id="@+id/centerVerticalLine"/>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <RelativeLayout
         android:id="@+id/heightLayout"
         android:layout_width="340dp"
@@ -83,11 +109,37 @@
             android:layout_marginLeft="15dp"/>
 
     </RelativeLayout>
-    
-    
+
     <android.widget.Button
         android:layout_width="match_parent"
-        android:layout_height=""
+        android:layout_height="50dp"
+        android:id="@+id/calculateBMI"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:background="@drawable/buttonbackground"
+        android:text="Calculate Your BMI---"
+        android:textColor="#BFFFFFFF"
+        android:textStyle="bold"
+        android:layout_margin="15dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </RelativeLayout>
