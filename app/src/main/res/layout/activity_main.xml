@@ -92,8 +92,6 @@
 
     </RelativeLayout>
 
-
-
     <RelativeLayout
         android:id="@+id/weight"
         android:layout_width="130dp"
