@@ -7,26 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
-public class MainActivity extends AppCompatActivity {
+public class BMI_activity extends AppCompatActivity {
+    android.widget.Button recalculateBMI;
 
-    android.widget.Button calculateBMI;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_bmi);
+        recalculateBMI = findViewById(R.id.recalculateBMI);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        calculateBMI = findViewById(R.id.calculateBMI);
-        calculateBMI.setOnClickListener(new View.OnClickListener() {
+        recalculateBMI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BMI_activity.class);
+                Intent intent = new Intent(BMI_activity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
-
-
     }
 }

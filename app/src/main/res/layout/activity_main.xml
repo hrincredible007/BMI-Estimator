@@ -22,21 +22,21 @@
 
     <RelativeLayout
         android:id="@+id/male"
-        android:layout_width="150dp"
-        android:layout_height="180dp"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
         android:layout_toLeftOf="@id/centerHorizontalLine"
         android:background="@drawable/malefemalenotfocus"
         android:layout_above="@id/heightLayout"
-        android:layout_marginBottom="90dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginRight="18dp">
         
         
         <ImageView
-            android:layout_width="190px"
-            android:layout_height="220px"
+            android:layout_width="150px"
+            android:layout_height="120px"
             android:layout_centerInParent="true"
             android:src="@drawable/male"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
             android:layout_above="@id/maleText"/>
 
 
@@ -51,27 +51,27 @@
             android:textStyle="bold"
             android:layout_marginBottom="25dp"
             android:textColor="#ffffff"
-            android:textSize="24sp"/>
+            android:textSize="19sp"/>
 
     </RelativeLayout>
 
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="180dp"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
         android:id="@+id/female"
         android:layout_toRightOf="@id/centerHorizontalLine"
         android:layout_marginLeft="18dp"
         android:layout_above="@id/heightLayout"
-        android:layout_marginBottom="90dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/malefemalenotfocus">
 
         <ImageView
-            android:layout_width="190px"
-            android:layout_height="220px"
+            android:layout_width="150px"
+            android:layout_height="120px"
             android:id="@+id/femaleImage"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
             android:layout_above="@id/femaleText"
             android:layout_centerInParent="true"
             android:src="@drawable/female"/>
@@ -84,7 +84,7 @@
             android:layout_alignParentBottom="true"
             android:text="Female"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="19sp"
             android:layout_marginBottom="25dp"
             android:layout_centerHorizontal="true"/>
 
@@ -95,12 +95,13 @@
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="180dp"
+        android:id="@+id/weight"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
         android:layout_toLeftOf="@+id/centerHorizontalLine"
         android:layout_marginRight="18dp"
         android:layout_below="@id/heightLayout"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/height_background">
 
         <TextView
@@ -112,7 +113,7 @@
             android:layout_centerHorizontal="true"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="10dp"/>
 
 
         <TextView
@@ -124,7 +125,7 @@
             android:layout_centerHorizontal="true"
             android:textSize="29sp"
             android:textColor="@color/white"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="10dp"/>
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -159,19 +160,19 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:src="@drawable/add"/>
-
+3
         </RelativeLayout>
 
     </RelativeLayout>
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="180dp"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
         android:layout_toRightOf="@+id/centerHorizontalLine"
         android:layout_marginLeft="18dp"
         android:layout_below="@id/heightLayout"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/height_background">
 
         <TextView
@@ -183,7 +184,7 @@
             android:layout_centerHorizontal="true"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/ageNumeric"
@@ -194,7 +195,7 @@
             android:layout_centerHorizontal="true"
             android:textSize="29sp"
             android:textColor="@color/white"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="10dp"/>
 
 
         <RelativeLayout
@@ -210,12 +211,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:src="@drawable/minus"/>
-
-
-
         </RelativeLayout>
-
-
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -231,40 +227,13 @@
                 android:layout_height="35dp"
                 android:src="@drawable/add"/>
 
-
-
         </RelativeLayout>
-
-
 
     </RelativeLayout>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <RelativeLayout
         android:id="@+id/heightLayout"
-        android:layout_width="340dp"
+        android:layout_width="310dp"
         android:layout_height="150dp"
         android:layout_above="@id/centerVerticalLine"
         android:layout_alignParentStart="true"
@@ -275,7 +244,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="-50dp"
+        android:layout_marginBottom="-10dp"
         android:background="@drawable/height_background">
 
 
@@ -338,25 +307,4 @@
         android:textColor="#BFFFFFFF"
         android:textStyle="bold"
         android:layout_margin="15dp"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </RelativeLayout>
