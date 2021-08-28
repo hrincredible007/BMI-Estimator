@@ -127,6 +127,9 @@
             android:textColor="@color/white"
             android:layout_marginTop="10dp"/>
 
+
+
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -268,6 +271,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:thumbTint="@color/white"
             android:layout_marginBottom="20dp"
             android:progressTint="#FF4c4c"
             android:layout_marginRight="10dp"

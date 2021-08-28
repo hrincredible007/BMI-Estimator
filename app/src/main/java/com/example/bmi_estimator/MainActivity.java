@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView currentHeight;
@@ -101,14 +102,18 @@ public class MainActivity extends AppCompatActivity {
         agePlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                constAge += 1;
+                if(constAge<=100) {
+                    constAge += 1;
+                }
                 ageNumeric.setText(String.valueOf(constAge));
             }
         });
         weightPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                constWeight += 1;
+                if(constWeight<=200) {
+                    constWeight += 1;
+                }
                 weightNumeric.setText(String.valueOf(constWeight));
             }
         });
@@ -117,27 +122,67 @@ public class MainActivity extends AppCompatActivity {
         ageMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                constAge -= 1;
+                if(constAge>1) {
+                    constAge -= 1;
+                }
+
                 ageNumeric.setText(String.valueOf(constAge));
             }
         });
         weightMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                constWeight -= 1;
+                if(constWeight>1) {
+                    constWeight -= 1;
+                }
                 weightNumeric.setText(String.valueOf(constWeight));
             }
         });
 
 
         calculateBMI.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BMI_activity.class);
-                startActivity(intent);
-                finish();
-            }
 
+
+                if(typeOfUser.equals("0")){
+                    Toast.makeText(getApplicationContext(), "Select Your Gender First", Toast.LENGTH_SHORT).show();
+                }
+
+                else if(mintProgress.equals("0")){
+                    Toast.makeText(getApplicationContext(), "Select Your Height First", Toast.LENGTH_SHORT).show();
+
+                }
+
+                else if(constAge <= 0){
+                    Toast.makeText(getApplicationContext(), "Age is incorrect", Toast.LENGTH_SHORT).show();
+                }
+
+                else if(constWeight<=0){
+                    Toast.makeText(getApplicationContext(), "Weight is incorrect", Toast.LENGTH_SHORT).show();
+                }
+                else {
+
+                    Intent intent = new Intent(MainActivity.this, BMI_activity.class);
+                    intent.putExtra("gender", typeOfUser);
+                    intent.putExtra("height", mintProgress);
+                    intent.putExtra("weight", weight);
+                    intent.putExtra("age", age2);
+                    intent.putExtra("gender", typeOfUser);
+                    intent.putExtra("gender", typeOfUser);
+
+                    startActivity(intent);
+                    finish();
+
+
+                }
+
+            }
 
         });
 

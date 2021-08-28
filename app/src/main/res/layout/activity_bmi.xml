@@ -18,12 +18,12 @@
 
 
     <ImageView
+        android:id="@+id/imageViewOk"
         android:layout_width="175dp"
         android:layout_height="140dp"
         android:padding="10dp"
         android:layout_below="@id/result"
         android:layout_marginTop="20dp"
-        android:id="@+id/imageViewOk"
         android:src="@drawable/ok"
         android:layout_centerHorizontal="true"/>
 
